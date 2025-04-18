@@ -1,0 +1,263 @@
+{
+    "Title": "aegis simulator",
+    "Credits": "created by aegis michael (amichae2@ucsc.edu).",
+    "InitialLocation": "thimann outside",
+    "Locations": {
+        "thimann outside": {
+            "Body": "<b>outside the thimann lecture hall</b><br/><br/>wow that 176 lecture was really something. i still have no idea what a game system is... but i'm sure that by the end of the quarter i'll get that squared away! hey wait a second, where's my water bottle? oh shoot, i better find that before my 120 lecture starts here again in an hour!",
+            "Choices": [
+                {
+                    "Text": "check inside the lecture hall",
+                    "Target": "thimann inside"
+                }
+            ]
+        },
+        "thimann inside": {
+            "Body": "<b>inside the thimann lecture hall</b><br/><br/>well... it's not under the seat where i was sitting during class. darn, i guess i'll just have to retrace my steps. where did i step again?",
+            "Choices": [
+                {
+                    "Text": "go north to the science and engineering library",
+                    "Target": "s&e"
+                },
+                {
+                    "Text": "go west to the redwood grove",
+                    "Target": "redwood grove"
+                },
+                {
+                    "Text": "go southwest to the porter dining hall",
+                    "Target": "porter dining hall"
+                },
+                {
+                    "Text": "go south to the mchenry library",
+                    "Target": "mchenry"
+                }
+            ]
+        },
+        "s&e": {
+            "Body": "<b>science and engineering library</b><br/><br/>hmmm... i don't see it anywhere. hey look, the water bottle refiller where i filled up the three-hundred-thousandth water bottle, i had to chug like three. noooot there either.",
+            "Choices": [
+                {
+                    "Text": "find julia upstairs",
+                    "Target": "julia",
+                    "Condition": 0
+                },
+                {
+                    "Text": "go west to the redwood grove",
+                    "Target": "redwood grove"
+                },
+                {
+                    "Text": "go south to the thimann lecture hall",
+                    "Target": "thimann inside"
+                }
+            ]
+        },
+        "redwood grove": {
+            "Body": "<b>outside the redwood grove</b><br/><br/>hmmm i guess the bottle could be in robin's apartment. when was the last time i had it again? oh hey wait, is that sophia on her porch?!",
+            "Choices": [
+                {
+                    "Text": "talk to sophia",
+                    "Target": "sophia"
+                },
+                {
+                    "Text": "go to robin's (my jaw-droppingly impossibly beautiful sweet precious kindhearted princess girlfriend's) apartment",
+                    "Target": "robin"
+                },
+                {
+                    "Text": "go east to the science and engineering library",
+                    "Target": "s&e"
+                },
+                {
+                    "Text": "go east to the thimann lecture hall",
+                    "Target": "thimann inside"
+                },
+                {
+                    "Text": "go south to the porter dining hall",
+                    "Target": "porter dining hall"
+                }
+            ]
+        },
+        "porter dining hall": {
+            "Body": "<b>porter dining hall</b><br/><br/>yeesh the smell, what are they feeding these porter kids?? let's check! oh hey, sophie and mel are hanging out in the dining hall!",
+            "Choices": [
+                {
+                    "Text": "talk to mel and sophie",
+                    "Target": "mel and sophie"
+                },
+                {
+                    "Text": "go north to the redwood grove",
+                    "Target": "redwood grove"
+                },
+                {
+                    "Text": "go east to the thimann lecture hall",
+                    "Target": "thimann inside"
+                },
+                {
+                    "Text": "go east to the mchenry library",
+                    "Target": "mchenry"
+                },
+                {
+                    "Text": "go south to the rachel carson courts",
+                    "Target": "rachel carson",
+                    "Condition": 1
+                }
+            ]
+        },
+        "rachel carson": {
+            "Body": "<b>the rachel carson courts</b><br/><br/>you know what, it's been FOREVER!!! i'm sure skating for a minute or two can't hurt :D",
+            "Choices": [
+                {
+                    "Text": "skate around with sophia",
+                    "Target": "120 no bottle"
+                }
+            ],
+            "Image": "sophia.png"
+        },
+        "mchenry": {
+            "Body": "<b>the mchenry library</b><br/><br/>wow this library is awesome--all twelve floors. but it seems like my water bottle's nowhere to be found. maybe jade would know, she's usually crawling around here somewhere doing homework!",
+            "Choices": [
+                {
+                    "Text": "look around",
+                    "Target": "jade"
+                },
+                {
+                    "Text": "go north to the thimann lecture hall",
+                    "Target": "thimann inside"
+                },
+                {
+                    "Text": "go west to the porter dining hall",
+                    "Target": "porter dining hall"
+                },
+                {
+                    "Text": "go east to the cowell coffee shop",
+                    "Target": "cowell",
+                    "Condition": 2
+                },
+                {
+                    "Text": "go south to the digital arts research center",
+                    "Target": "darc"
+                }
+            ]
+        },
+        "cowell": {
+            "Body": "<b>the cowell coffee shop</b><br/><br/>my water bottle!!!! i finally found it!!! time to go to 120 :D",
+            "Choices": [
+                {
+                    "Text": "go to 120",
+                    "Target": "120 with bottle"
+                }
+            ]
+        },
+        "darc": {
+            "Body": "<b>the digital arts research center</b><br/><br/>maybe i left it here last gda meeting!!! in that case--oh god what if i left it at pizza my heart afterwards. or cold stone!! OR FOSTER FREEZE!! IT COULD BE ANYWHERE!! AAAAAA!!!!",
+            "Choices": [
+                {
+                    "Text": "go north to the mchenry library",
+                    "Target": "mchenry"
+                },
+                {
+                    "Text": "go south to downtown",
+                    "Target": "downtown"
+                }
+            ]
+        },
+        "jade": {
+            "Body": "<b>the mchenry library</b><br/><br/>aegis: hey jade!!! if it isn't my LEAST favorite housemate<br/>jade: i'm... your only housemate<br/>aegis: so, least-favorite-housemate, have you seen my water bottle anywhere? i lost it sometime before 176<br/>jade: you're not really making me want to help you here, but even if i wanted to, i have no idea<br/>aegis: awwwww darn<br/>jade: did you ask julia? you came to 176 together right?<br/>aegis: hmmm i think so? do you know where they are?<br/>jade: i'd guess the other library--they said something about needing to finish some homework, i think<br/>aegis: thanks, favorite housemate :D",
+            "Choices": [
+                {
+                    "Text": "go north to the thimann lecture hall",
+                    "Target": "thimann inside"
+                },
+                {
+                    "Text": "go west to the porter dining hall",
+                    "Target": "porter dining hall"
+                },
+                {
+                    "Text": "go south to the digital arts research center",
+                    "Target": "darc"
+                }
+            ],
+            "Unlock": 0,
+            "Image": "jade.png"
+        },
+        "julia": {
+            "Body": "<b>the science and engineering library</b><br/><br/>aegis: hey there you are!<br/>julia: aegis :) how's it goin<br/>aegis: TERRIBLE i've lost my water bottle. i've looked all over to no avail.<br/>julia: well, did you have it during our 176 lecture?<br/>aegis: well i didn't have after class, and i couldn't find it at my seat when i went back. so fingers crossed i never had it<br/>julia: well, didn't you have it when we got lunch at the cowell coffee shop? you spilled it all over me...<br/>aegis: wait, you're right!!!! it must be there!!! thanks :DDD<br/>julia: now GO AWAY. im udying.",
+            "Choices": [
+                {
+                    "Text": "go west to the redwood grove",
+                    "Target": "redwood grove"
+                },
+                {
+                    "Text": "go south to the thimann lecture hall",
+                    "Target": "thimann inside"
+                }
+            ],
+            "Unlock": 2,
+            "Image": "julia.png"
+        },
+        "mel and sophie": {
+            "Body": "<b>the porter dining hall</b><br/><br/>aegis: hey guys!!!<br/>sophie: hey aegiisssss :333<br/>mel: hey!! what's up?<br/>aegis: i'm looking for my water bottle. have ya'll seen it anywhere?<br/>mel: sorry, no clue<br/>sophie: hmmm... i'm not sure either. good luck finding it!",
+            "Choices": [
+                {
+                    "Text": "go north to the redwood grove",
+                    "Target": "redwood grove"
+                },
+                {
+                    "Text": "go east to the thimann lecture hall",
+                    "Target": "thimann inside"
+                },
+                {
+                    "Text": "go east to the mchenry library",
+                    "Target": "mchenry"
+                },
+                {
+                    "Text": "go south to the rachel carson courts",
+                    "Target": "rachel carson",
+                    "Condition": 1
+                }
+            ],
+            "Unlock": 1,
+            "Image": "mel_and_sophie.png"
+        },
+        "sophia": {
+            "Body": "<b>the redwood grove</b><br/><br/>sophia: what's up aegis?<br/>aegis: hey sophia!! what are you up to?<br/>sophia: just hanging out until my next class. actually, if you're free, why don't you meet me at the rachel carson courts to skate?<br/>aegis: well, i really should be trying to find my water bottle, but... it has been a while...",
+            "Choices": [
+                {
+                    "Text": "go to robin's apartment",
+                    "Target": "robin"
+                },
+                {
+                    "Text": "go east to the science and engineering library",
+                    "Target": "s&e"
+                },
+                {
+                    "Text": "go east to the thimann lecture hall",
+                    "Target": "thimann inside"
+                },
+                {
+                    "Text": "go south to the porter dining hall",
+                    "Target": "porter dining hall"
+                }
+            ],
+            "Unlock": 1,
+            "Image": "sophia.png"
+        },"robin": {
+            "Body": "<b>the redwood grove</b><br/><br/>robin: omg, hi aegis?<br/>aegis: robin! sorry to catch you off guard :) do you have a minute?<br/>robin: no worries, and yea--i'm free for the rest of the day. wanna come in?<br/>aegis: well it's just that i... err.. lost my..... i'd love to!! how could i ever say no!!!",
+            "Choices": [
+                {
+                    "Text": "stay until 120 lecture",
+                    "Target": "120 no bottle"
+                }
+            ],
+            "Image": "robin.png"
+        },
+        "120 no bottle": {
+            "Body": "<b>game over</b><br/><br/>time for 120 already? i never found my water bottle!!!! NOOOOOOOOOOOOO!!!!!!!!!"
+        },
+        "downtown": {
+            "Body": "<b>game over</b><br/><br/>there's no way i could find it down here!! and now i'll miss 120 for sure!! NOOOOOOOOOO!!!!!"
+        },
+        "120 with bottle": {
+            "Body": "<b>thimann lecture hall</b><br/><br/>phew, just made it!!!!! thank goodness for all of my wonderful beautiful friends whom i love, or there's no way i'd have ever found my water bottle!!!!"
+        }
+    }
+}
